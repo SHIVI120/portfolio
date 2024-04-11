@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.355),grey,black);
+}
+ 
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+   }
+   .heading h1{
+    font-size: 50px;
+    font-style: bold;
+    margin-bottom: 25px;
+    position: relative;
+    text-shadow: 2px 2px rgb(153, 0, 255);
+   }
+   .heading h1::after{
+    content:"";
+    position : absolute;
+    width: 100%;
+    height:4px;
+    display:block;
+    margin:0 auto;
+    background-color: green;
+   }
+   .heading p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+   }
+.first-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+.first-container h1{
+    color:white;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.first-container .progress{
+    position:relative;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    color:white;
+    background:#444 linear-gradient(to right, transparent 
+    50%, var(--clr)0);
+
+}
+.first-container .progress h3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:2.5em;
+    z-index:1;
+    font-weight:500;
+}
+.first-container .progress h3 span{
+font-size:0.65em;
+font-weight:400;
+}
+.first-container .progress h4{
+    position:absolute;
+    top:62%;
+    left:50%;
+    transform:translate(-50%);
+    z-index:1;
+    font-weight:500;
+    color:var(--clr);
+    text-transform:uppercase;
+}
+.first-container .progress::before 
+{
+    content:'';
+    display:block;
+    height:100%;
+    margin-left:50%;
+    transform-origin:left;
+    border-radius: 0 100% 100%;
+}
+.first-container .progress::after
+{
+   content:'';
+   position: absolute;
+   inset:5px;
+  background:black; 
+   border-radius:50%;
+}
+.first-container .progress::before{
+    background:var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn )));
+}
+/*if value is less than 50%,then*/
+
+.first-container .progress.less::before
+{
+    background:#444;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn ))); 
+}
+
+.first-section h2{
+    color:white;
+    font-size: 30px;
+    font-weight: 300;
+    justify-content: left;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 20px;
+    padding: 10px;
+}
+.second-section li{
+    color:aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+.third-section h5{
+    color:white;
+    font-size: 25px;
+    font-weight: 300;
+    justify-content: left;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+.third-section li{
+    color:aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
